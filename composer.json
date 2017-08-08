@@ -1,0 +1,11 @@
+{
+    "name": "anxuefei/anxuefeixiaomi",
+    "type" :"project",
+    "authors": [
+        {
+            "name": "安雪飞",
+            "email": "359035998@qq.com"
+        }
+    ],
+    "require": {}
+}

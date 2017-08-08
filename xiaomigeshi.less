@@ -1,0 +1,2759 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+ol li,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+@color: #FF6700;
+@ziti: #A8A8A8;
+.yangshi {
+    color: @color !important;
+    border-bottom: 2px solid @color !important;
+}
+//js引用样式
+//滑动轮播区样式
+.shubiao {
+    color: @ziti !important;
+    cursor: default !important;
+}
+.dianyanse {
+    border: 1px solid #FF6B07;
+    background: #FFFFFF !important;
+}
+//内容区HOVER样式、
+.hover1 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #FFBB40;
+    border: 1px solid #FFBB40;
+    &:hover {
+        color: #FFFFFF !important;
+        background: @color;
+        border: 1px solid @color !important;
+    }
+}
+.hover2 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #B3D895;
+    border: 1px solid #B3D895;
+    &:hover {
+        color: #FFFFFF !important;
+        background: #B3D895;
+        border: 1px solid #B3D895 !important;
+    }
+}
+.hover3 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #EC6F6C;
+    border: 1px solid #EC6F6C;
+    &:hover {
+        color: #FFFFFF !important;
+        background: #EC6F6C;
+        border: 1px solid #EC6F6C !important;
+    }
+}
+.hover4 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #0C80DC;
+    border: 1px solid #0C80DC;
+    &:hover {
+        color: #FFFFFF !important;
+        background: #0C80DC;
+        border: 1px solid #0C80DC !important;
+    }
+}
+
+//华东轮播区样式结束
+//js引用样式结束
+//头部广告
+#TbGg {
+    width: 100%;
+    height: 120px;
+    background: url("img/toub.jpg") no-repeat center;
+    .GGdJ {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+}
+//头部广告结束
+//导航栏开始
+#Nav {
+    width: 100%;
+    height: 40px;
+    background: black;
+    .NavK {
+        width: 1226px;
+        height: 40px;
+        margin: 0 auto;
+        position: relative;
+        .NavBT {
+            width: 576px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            li {
+                float: left;
+                font-size: 12px;
+                a {
+                    color: @ziti;
+                    line-height: 40px;
+                    border-right: 1px solid @ziti;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    &:hover {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .NavDL {
+            width: 143px;
+            height: 40px;
+            position: absolute;
+            right: 120px;
+            top: 0;
+            .DL {
+                float: left;
+                font-size: 12px;
+                a {
+                    color: @ziti;
+                    line-height: 40px;
+                    border-right: 1px solid @ziti;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    &:hover {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .NavGw {
+            width: 120px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 9;
+            &:hover {
+                .gwlan {
+                    display: block;
+                }
+            }
+            text-align: center;
+            .iconfont {
+                display: inline-block;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                color: @ziti;
+                background: #424242;
+                z-index: 9;
+                &:hover {
+                    background: #FFFFFF;
+                    color: @color;
+                }
+            }
+            .gwlan {
+                width: 316px;
+                height: 100px;
+                position: absolute;
+                right: 0;
+                top: 40px;
+                display: none;
+                box-shadow: 0 2px 2px #333333;
+                background: #FFFFFF;
+                span {
+                    display: block;
+                    line-height: 100px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+//导航栏结束
+//二级菜单开始
+#Menu {
+    width: 100%;
+    height: 100px;
+    .MenuK {
+        width: 1226px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+        .MenuLogo {
+            width: 55px;
+            height: 55px;
+            background: url("img/mi-logo.png") no-repeat center;
+            background-color: @color;
+            margin-top: 23px;
+            float: left;
+        }
+        .MenuDt {
+            width: 165px;
+            height: 100px;
+            background: url("img/yyymix.gif") no-repeat center;
+            float: left;
+        }
+        .MenuBT {
+            width: 685px;
+            height: 100px;
+            float: left;
+            line-height: 100px;
+            .MenuBTZi {
+                float: left;
+                margin-left: 20px;
+                .zi {
+                    color: black;
+                    &:hover {
+                        color: @color;
+                    }
+                }
+                .ErJiYcQ {
+                    height: 0;
+                    position: absolute;
+                    top: 100px;
+                    left: 50%;
+                    border-top: 1px solid #E0E0E0;
+                    overflow: hidden;
+                    display: none;
+                    background: #FFFFFF;
+                    box-shadow: 0 2px 2px #DEDEDE;
+                    .YCk {
+                        width: 1246px;
+                        height: 201px;
+                        margin: 0 auto;
+                        background: #FFFFFF;
+                        .YCNR {
+                            width: 205px;
+                            height: 201px;
+                            float: left;
+                            position: relative;
+                            .YCNRK {
+                                width: 66px;
+                                height: 22px;
+                                border: 1px solid @color;
+                                line-height: 22px;
+                                text-align: center;
+                                font-size: 12px;
+                                color: @color;
+                                margin: 0 auto;
+                            }
+                            .YCimg {
+                                display: block;
+                                width: 160px;
+                                height: 115px;
+                                margin: 10px auto 0;
+                                text-align: center;
+                            }
+                            .YCname {
+                                display: block;
+                                width: 180px;
+                                height: 20px;
+                                font-size: 12px;
+                                text-align: center;
+                                margin: 5px auto 0;
+                                color: black;
+                                line-height: 20px;
+                            }
+                            .YCjiage {
+                                display: block;
+                                width: 180px;
+                                height: 20px;
+                                line-height: 20px;
+                                font-size: 12px;
+                                text-align: center;
+                                margin: 0 auto;
+                                color: @color;
+                            }
+                            .YCshuxian {
+                                display: block;
+                                width: 1px;
+                                height: 100px;
+                                background: @ziti;
+                                position: absolute;
+                                right: 0;
+                                top: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .MenuSs {
+            width: 296px;
+            height: 50px;
+            margin-top: 25px;
+            border: 1px solid #EEEEEE;
+            position: absolute;
+            right: 0;
+            top: 0;
+            &:hover {
+                border-color: @ziti;
+                #ChaZhaoK {
+                    border-color: @ziti;
+                }
+            }
+            #ChaZhaoK {
+                display: block;
+                border: none;
+                border-right: 1px solid #EEEEEE;
+                width: 243px;
+                height: 50px;
+            }
+            .iconfont {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: block;
+                width: 52px;
+                height: 50px;
+                font-size: 25px;
+                background: #FFFFFF;
+                border: none;
+                &:hover {
+                    background: @color;
+                    color: #FFFFFF;
+                }
+            }
+            .a {
+                width: 174px;
+                height: 21px;
+                font-size: 12px;
+                position: absolute;
+                right: 62px;
+                top: 15px;
+                a {
+                    background: #EEEEEE;
+                    color: black;
+                    margin-left: 3px;
+                    padding: 2px 3px;
+                    &:hover {
+                        background: @color;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .SouSUYCQU {
+                width: 243px;
+                background: #FFFFFF;
+                border: 1px solid @color;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 99;
+                display: none;
+                .SouSuoNR {
+                    width: 243px;
+                    height: 30px;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        background: #FAFAFA;
+                    }
+                    .NRname {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 5px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        color: black;
+                    }
+                    .NRShuliang {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 5px;
+                        float: right;
+                        line-height: 30px;
+                        font-size: 12px;
+                        color: @ziti;
+                    }
+                }
+            }
+        }
+    }
+}
+//二级菜单结束
+//轮播图开始
+
+#LunBok {
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    #LunBo {
+        width: 1226px;
+        height: 460px;
+        cursor: pointer;
+        position: relative;
+        left: 0;
+        top: 0;
+        .Image {
+            width: 1226px;
+            height: 460px;
+            position: relative;
+            .LBT {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+            .Dian {
+                width: 150px;
+                height: 10px;
+                position: absolute;
+                right: 0;
+                bottom: 10px;
+                .quan {
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    float: left;
+                    margin-left: 10px;
+                }
+            }
+            .jiantou {
+                .icon-chevron-copy {
+                    display: block;
+                    width: 41px;
+                    height: 70px;
+                    position: absolute;
+                    top: 195px;
+                    left: 234px;
+                    color: @ziti;
+                    line-height: 70px;
+                    font-size: 40px;
+                    &:hover {
+                        background: rgba(0,0,0,0.3);
+                        color: #FFFFFF;
+                    }
+                }
+                .icon-chevron-copy-copy-copy-copy-copy-copy {
+                    display: block;
+                    width: 41px;
+                    height: 70px;
+                    position: absolute;
+                    top: 195px;
+                    right: 0;
+                    color: @ziti;
+                    line-height: 70px;
+                    font-size: 40px;
+                    &:hover {
+                        background: rgba(0,0,0,0.3);
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+        }
+    }
+    .BiaoTi {
+        width: 234px;
+        height: 460px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.3);
+        .LunBoBT {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -25px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT1 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi1{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi1 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -67px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT2 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi2{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi2 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -109px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT3 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi3{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi3 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -151px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT4 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi4{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi4 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -193px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT5 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi5{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi5 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -235px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT6 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi6{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi6 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -277px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT7 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi7{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi7 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -319px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT8 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi8{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi8 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -361px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .LunBoBT9 {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            &:hover{
+                  .LunBoErJi9{
+                        display: block;
+                    }
+            }
+            .NAME {
+                display: block;
+                line-height: 42px;
+                color: #FFFFFF;
+                width: 204px;
+                height: 42px;
+                padding-left: 30px;
+                font-size: 14px;
+                &:hover {
+                    background: @color;
+                  
+                }
+            }
+            span {
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                font-size: 14px;
+                color: @ziti;
+            }
+            .LunBoErJi9 {
+                width: 840px;
+                height: 460px;
+                position: absolute;
+                top: -403px;
+                left: 234px;
+                background: #FFFFFF;
+                display: none;
+                .tupian {
+                    width: 265px;
+                    height: 460px;
+                    float: left;
+                    padding-left: 10px;
+                    li {
+                        width: 265px;
+                        height: 76px;
+                        position: relative;
+                        cursor: pointer;
+                        .tu {
+                            width: 40px;
+                            height: 40px;
+                            position: absolute;
+                            top: 18px;
+                            margin-left: 10px;
+                        }
+                        .jieshao {
+                            display: block;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 76px;
+                            margin-left: 60px;
+                            &:hover {
+                                color: @color;
+                            }
+                        }
+                        .qiangou {
+                            display: block;
+                            width: 60px;
+                            height: 24px;
+                            border: 1px solid @color;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: center;
+                            line-height: 24px;
+                            position: absolute;
+                            top: 26px;
+                            right: 0;
+                            &:hover {
+                                background: @color;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+//轮播图结束
+//轮播图下活动区
+#LunBXIA {
+    width: 1226px;
+    height: 170px;
+    margin: 20px auto 0;
+    .LunBXiaK {
+        width: 1236px;
+        height: 170px;
+        .LunBXiaH {
+            width: 234px;
+            height: 170px;
+            border: 1px solid black;
+            background: #5F5750;
+            float: left;
+            .iconfont {
+                display: block;
+                width: 52px;
+                height: 62px;
+                font-size: 30px;
+                line-height: 42px;
+                text-align: center;
+                padding: 10px 13px;
+                color: @ziti;
+                position: relative;
+                float: left;
+                &:hover {
+                    color: #FFFFFF;
+                }
+                span {
+                    display: block;
+                    margin-top: -15px;
+                    font-size: 12px;
+                }
+                .shuxian {
+                    height: 70px;
+                    width: 1px;
+                    background: @ziti;
+                    position: absolute;
+                    top: 6px;
+                    right: 0;
+                }
+                .hengxian {
+                    width: 64px;
+                    height: 1px;
+                    background: @ziti;
+                    position: absolute;
+                    bottom: 0;
+                    left: 6px;
+
+                }
+            }
+
+        }
+        .LunBXiaT {
+            .tu {
+                width: 316px;
+                height: 170px;
+                float: left;
+                margin-left: 15px;
+                img {
+                    width: 316px;
+                    height: 170px;
+                }
+            }
+        }
+    }
+
+}
+//轮播图下活动区结束
+
+//小米单品区开始
+#DanPin {
+    width: 1226px;
+    height: 438px;
+    margin: 20px auto 0;
+    .DanPinBT {
+        width: 1226px;
+        height: 58px;
+        line-height: 58px;
+        position: relative;
+        .jiantou {
+            width: 72px;
+            height: 25px;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            border: 1px solid @ziti;
+            .xian {
+                height: 25px;
+                width: 1px;
+                background: @ziti;
+                position: absolute;
+                top: 0;
+                left: 37px;
+            }
+            .DPJianTou {
+                display: block;
+                width: 34px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 12px;
+                text-align: center;
+                float: left;
+                margin-left: 2px;
+                color: black;
+                &:hover {
+                    color: @color;
+                }
+            }
+        }
+    }
+    .DanPinNR {
+        width: 1226px;
+        height: 380px;
+        overflow: hidden;
+        position: relative;
+        .DanPinNRK {
+            width: 2480px;
+            height: 380px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            .TK {
+                width: 1226px;
+                height: 380px;
+                float: left;
+                .DanPinT {
+                    width: 1246px;
+                    height: 380px;
+                    margin-left: -14px;
+                    .DPt {
+                        background: #FAFAFA;
+                        width: 234px;
+                        height: 380px;
+                        float: left;
+                        margin-left: 14px;
+                        a {
+                            display: block;
+                            width: 160px;
+                            height: 166px;
+                            margin: 40px auto 0;
+                            text-align: center;
+                            color: black;
+                            font-size: 14px;
+                            line-height: 26px;
+                        }
+                        .HuoDong {
+                            display: block;
+                            color: @ziti;
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 30px;
+                        }
+                        .DanJia {
+                            color: @color;
+                            display: block;
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//小米单品区结束
+//家电区开始
+#JiaDian {
+    width: 100%;
+    height: 686px;
+    background: #F5F5F5;
+    margin-top: 40px;
+    .JiaDianK {
+        width: 1226px;
+        height: 686px;
+        margin: 0 auto;
+        .JDBiaoTi {
+            width: 1226px;
+            height: 58px;
+            line-height: 58px;
+            position: relative;
+            .JDBTZ {
+                float: left;
+            }
+            .JDXuanQu {
+                height: 42px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                .ShangPinBT {
+                    float: left;
+                    margin-left: 30px;
+                    font-size: 16px;
+                    color: black;
+                    height: 26px;
+                    line-height: 26px;
+                    display: block;
+                }
+
+            }
+        }
+        .JDTuQu {
+            width: 1226px;
+            height: 628px;
+            position: relative;
+            .TuQuZT {
+                width: 234px;
+                height: 614px;
+                float: left;
+                &:hover {
+                    box-shadow: 0 14px 14px #DEDEDE;
+                }
+
+            }
+            .NRqK {
+                float: left;
+                width: 978px;
+                height: 628px;
+                margin-left: 12px;
+                display: none;
+                .JDShangPinQu {
+                    width: 998px;
+                    height: 628px;
+                    margin-left: -12px;
+                    position: absolute;
+                    left: 246px;
+                    top: 0;
+                    .JDNR {
+                        width: 234px;
+                        height: 300px;
+                        position: relative;
+                        float: left;
+                        margin-left: 12px;
+                        margin-bottom: 10px;
+                        background: #FFFFFF;
+                        overflow: hidden;
+                        transition: all 1s;
+                        &:hover {
+                            top: -5px;
+                            box-shadow: 0 14px 14px #DEDEDE;
+                            .PingLun {
+
+                                bottom: 0;
+                            }
+                        }
+
+                        .JDNRTu {
+                            display: block;
+                            width: 150px;
+                            height: 156px;
+                            margin: 30px auto;
+                        }
+                        .JDNRJieShao {
+                            display: block;
+                            height: 21px;
+                            line-height: 21px;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: black;
+                            text-align: center;
+                        }
+                        .HDRiQi {
+                            display: block;
+                            height: 18px;
+                            font-size: 12px;
+                            color: @ziti;
+                            text-align: center;
+                            line-height: 18px;
+                        }
+                        .JiaQian {
+                            margin-top: 10px;
+                            height: 21px;
+                            text-align: center;
+                            line-height: 21px;
+                            font-size: 14px;
+                            .XianJia {
+                                color: @color;
+                            }
+                            .YuanJia {
+                                color: @ziti;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .BiaoQian {
+                            display:block width: 44px;
+                            height: 20px;
+                            padding: 0 10px;
+                            background: #E53935;
+                            color: #FFFFFF;
+                            text-align: center;
+                            line-height: 20px;
+                            font-size: 14px;
+                            position: absolute;
+                            top: 0;
+                            left: 85px;
+                        }
+                        .PingLun {
+                            width: 234px;
+                            height: 80px;
+                            position: absolute;
+                            bottom: -234px;
+                            left: 0;
+                            background: @color;
+                            transition: all 0.3s;
+                            .PLnr {
+                                display: block;
+                                width: 174px;
+                                height: 36px;
+                                line-height: 18px;
+                                margin: 0 auto;
+                                text-align: left;
+                                font-size: 12PX;
+                                color: #FFFFFF;
+                                margin-top: 10px;
+                            }
+                            .PLmz {
+                                display: block;
+                                width: 174px;
+                                height: 18px;
+                                text-align: left;
+                                font-size: 12px;
+                                color: rgba(255,255,255,0.5);
+                                line-height: 18px;
+                                margin: 10px auto 0;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+            .YouXias {
+                width: 234px;
+                height: 143px;
+                float: left;
+                margin-left: 12px;
+                margin-bottom: 10px;
+                background: #FFFFFF;
+                position: relative;
+                &:hover {
+                    box-shadow: 0 14px 14px #DEDEDE;
+                }
+                .MingCheng {
+                    display: block;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: black;
+                    text-align: left;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                }
+                .YXJQ {
+                    display: block;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: @color;
+                    text-align: left;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                }
+                .YXT {
+                    position: absolute;
+                    top: 20px;
+                    right: 10px;
+                }
+            }
+            .YouXiaX {
+                width: 234px;
+                height: 143px;
+                float: left;
+                margin-left: 12px;
+                margin-bottom: 10px;
+                background: #FFFFFF;
+                position: relative;
+                &:hover {
+                    box-shadow: 0 14px 14px #DEDEDE;
+                }
+                .MingCheng {
+                    display: block;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    font-size: 16px;
+                    color: black;
+                    text-align: left;
+                    margin-top: 50px;
+                    margin-left: 30px;
+                }
+                .YXJQ {
+                    display: block;
+                    width: 94px;
+                    height: 21px;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: @ziti;
+                    text-align: left;
+                    margin-left: 30px;
+                }
+                .LLJT {
+                    display: block;
+                    font-size: 50px;
+                    color: @color;
+                    position: absolute;
+                    top: 40px;
+                    right: 25px;
+                }
+            }
+
+        }
+    }
+}
+//家电区结束
+//智能,搭配，配件，周边区开始
+#ZhiNeng {
+    width: 100%;
+    height: 686px;
+    background: #F5F5F5;
+    padding-top: 20px;
+    .ZhiNengK {
+        width: 1226px;
+        height: 686px;
+        margin: 0 auto;
+        .ZNBiaoTi {
+            width: 1226px;
+            height: 58px;
+            line-height: 58px;
+            position: relative;
+            .ZNBiaoTiZ {
+                float: left;
+            }
+            .XuanZeBiaoTi {
+                height: 42px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                .BiaoTiZi {
+                    float: left;
+                    margin-left: 30px;
+                    font-size: 16px;
+                    color: black;
+                    height: 26px;
+                    line-height: 26px;
+                    display: block;
+                }
+            }
+        }
+        .ZNLiuLanQu {
+            width: 1226px;
+            height: 628px;
+            position: relative;
+            .ZuoBianTu {
+                width: 234px;
+                height: 628px;
+                float: left;
+                .ShangTu {
+                    display: block;
+                    width: 234px;
+                    height: 300px;
+                    &:hover {
+                        box-shadow: 0 14px 14px #DEDEDE;
+                    }
+                }
+                .XiaTu {
+                    display: block;
+                    width: 234px;
+                    height: 300px;
+                    margin-top: 10px;
+                    &:hover {
+                        box-shadow: 0 14px 14px #DEDEDE;
+                    }
+                }
+
+            }
+            .ZNLiuLanNRK {
+                float: left;
+                width: 978px;
+                height: 628px;
+                margin-left: 12px;
+                .ZNLiuLanNR {
+                    width: 998px;
+                    height: 628px;
+                    margin-left: -12px;
+                    position: absolute;
+                    left: 246px;
+                    top: 0;
+                    display: none;
+                    .ZNShangPin {
+                        width: 234px;
+                        height: 300px;
+                        position: relative;
+                        float: left;
+                        margin-left: 14px;
+                        margin-bottom: 10px;
+                        background: #FFFFFF;
+                        overflow: hidden;
+                        transition: all 1s;
+                        &:hover {
+                            top: -5px;
+                            box-shadow: 0 4px 14px 4px #DEDEDE;
+                            .SPPingLun {
+                                bottom: 0;
+                            }
+                        }
+                        .ZNSPTu {
+                            display: block;
+                            width: 150px;
+                            height: 156px;
+                            margin: 30px auto;
+                        }
+                        .ZNSPName {
+                            display: block;
+                            height: 21px;
+                            line-height: 21px;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: black;
+                            text-align: center;
+                        }
+                        .ZNSPJS {
+                            display: block;
+                            height: 18px;
+                            font-size: 12px;
+                            color: @ziti;
+                            text-align: center;
+                            line-height: 18px;
+                        }
+                        .SPJiaQian {
+                            margin-top: 10px;
+                            height: 21px;
+                            text-align: center;
+                            line-height: 21px;
+                            font-size: 14px;
+                            .SPXianJia {
+                                color: @color;
+                            }
+                            .SPYuanJia {
+                                color: @ziti;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .SPDaZhe {
+                            display:block width: 44px;
+                            height: 20px;
+                            padding: 0 10px;
+                            background: #E53935;
+                            color: #FFFFFF;
+                            text-align: center;
+                            line-height: 20px;
+                            font-size: 14px;
+                            position: absolute;
+                            top: 0;
+                            left: 85px;
+                        }
+                        .SPPingLun {
+                            width: 234px;
+                            height: 80px;
+                            position: absolute;
+                            bottom: -234px;
+                            left: 0;
+                            background: @color;
+                            transition: all 0.3s;
+                            .SPPLNR {
+                                display: block;
+                                width: 174px;
+                                height: 36px;
+                                line-height: 18px;
+                                margin: 0 auto;
+                                text-align: left;
+                                font-size: 12PX;
+                                color: #FFFFFF;
+                                margin-top: 10px;
+                            }
+                            .PLName {
+                                display: block;
+                                width: 174px;
+                                height: 18px;
+                                text-align: left;
+                                font-size: 12px;
+                                color: rgba(255,255,255,0.5);
+                                line-height: 18px;
+                                margin: 10px auto 0;
+                            }
+                        }
+                    }
+                    .ZNZXs {
+                        width: 234px;
+                        height: 143px;
+                        float: left;
+                        margin-left: 12px;
+                        margin-bottom: 10px;
+                        background: #FFFFFF;
+                        position: relative;
+                        &:hover {
+                            box-shadow: 0 14px 14px #DEDEDE;
+                        }
+                        .ZXSName {
+                            display: block;
+                            width: 100%;
+                            height: 21px;
+                            line-height: 21px;
+                            font-size: 14px;
+                            color: black;
+                            text-align: left;
+                            margin-top: 30px;
+                            margin-left: 30px;
+                        }
+                        .ZXSPSJiaGe {
+                            display: block;
+                            width: 94px;
+                            height: 21px;
+                            line-height: 21px;
+                            font-size: 14px;
+                            color: @color;
+                            text-align: left;
+                            margin-top: 10px;
+                            margin-left: 30px;
+                        }
+                        .ZXimg {
+                            position: absolute;
+                            top: 20px;
+                            right: 10px;
+                        }
+                    }
+                    .ZNZXX {
+                        width: 234px;
+                        height: 143px;
+                        float: left;
+                        margin-left: 12px;
+                        margin-bottom: 10px;
+                        background: #FFFFFF;
+                        position: relative;
+                        &:hover {
+                            box-shadow: 0 14px 14px #DEDEDE;
+                        }
+                        .XXSName {
+                            display: block;
+                            width: 94px;
+                            height: 21px;
+                            line-height: 21px;
+                            font-size: 16px;
+                            color: black;
+                            text-align: left;
+                            margin-top: 50px;
+                            margin-left: 30px;
+                        }
+                        .ZXXSPJiaGe {
+                            display: block;
+                            width: 94px;
+                            height: 21px;
+                            line-height: 21px;
+                            font-size: 14px;
+                            color: @ziti;
+                            text-align: left;
+                            margin-left: 30px;
+                        }
+                        .LiuLanGD {
+                            display: block;
+                            font-size: 50px;
+                            color: @color;
+                            position: absolute;
+                            top: 40px;
+                            right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//智能,搭配，配件，周边区结束
+//为你推荐开始
+#WNTJ {
+    width: 100%;
+    height: 378px;
+    background: #F5F5F5;
+    .TJBT {
+        width: 1226px;
+        height: 58px;
+        margin: 0 auto;
+        position: relative;
+        .TJBTZ {
+            line-height: 58px;
+        }
+        .TJJT {
+            width: 73px;
+            height: 25px;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            border: 1px solid @ziti;
+            .left {
+                display: block;
+                text-align: center;
+                width: 36px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 12px;
+                float: left;
+                color: @ziti;
+            }
+            .right {
+                display: block;
+                text-align: center;
+                width: 36px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 12px;
+                float: left;
+                color: @ziti;
+            }
+            .TJx {
+                width: 1px;
+                height: 25px;
+                background: @ziti;
+                position: absolute;
+                left: 37px;
+                top: 0;
+            }
+        }
+    }
+    .TJnr {
+        width: 1226px;
+        height: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+        .TJNRk {
+            width: 4960px;
+            height: 300px;
+            position: relative;
+            left: 0;
+            top: 0;
+            .TJNRTU {
+                width: 1226px;
+                height: 300px;
+                float: left;
+                .TJQtu {
+                    width: 1246px;
+                    height: 300px;
+                    margin-left: -11px;
+                    .TJimg {
+                        width: 234px;
+                        height: 300px;
+                        float: left;
+                        margin-left: 14px;
+                        background: #FFFFFF;
+                        &:hover {
+                            box-shadow: 0 14px 14px #DEDEDE;
+                        }
+                        .TJimgT {
+                            width: 140px;
+                            height: 140px;
+                            display: block;
+                            margin: 40px auto 0;
+                        }
+                        .TJimgJS {
+                            display: block;
+                            height: 16px;
+                            text-align: center;
+                            margin-top: 16px;
+                            line-height: 16px;
+                            color: black;
+                            font-size: 14px;
+                        }
+                        .TJimgJQ {
+                            display: block;
+                            height: 21px;
+                            line-height: 21px;
+                            text-align: center;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            color: @color;
+                        }
+                        .TJimgPJ {
+                            display: block;
+                            height: 21px;
+                            line-height: 21px;
+                            text-align: center;
+                            margin-top: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//为你推荐结束
+//热评区开始
+#RePing {
+    width: 100%;
+    height: 473px;
+    background: #F5F5F5;
+    .RePingK {
+        width: 1226px;
+        height: 473px;
+        margin: 0 auto;
+        .RePingBT {
+            width: 1226px;
+            height: 58px;
+            h2 {
+                line-height: 58px;
+                text-align: left;
+            }
+        }
+    }
+    .RePingNRK {
+        width: 1226px;
+        height: 415px;
+        .RPNRtu {
+            width: 1240px;
+            height: 415px;
+            .RPtu {
+                width: 296px;
+                height: 415px;
+                float: left;
+                background: #FFFFFF;
+                margin-right: 14px;
+                &:hover {
+                    box-shadow: 0 14px 14px #DEDEDE;
+                }
+                .RPimg {
+                    width: 296px;
+                    height: 226px;
+                }
+                .RPtext {
+                    display: block;
+                    width: 240px;
+                    height: 96px;
+                    text-align: left;
+                    margin: 20px auto 0;
+                    font-size: 14px;
+                    color: black;
+                    line-height: 24px;
+                    overflow: hidden;
+                }
+                .PJname {
+                    display: block;
+                    width: 240px;
+                    height: 18px;
+                    text-align: left;
+                    margin: 0 auto;
+                    color: @ziti;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .RPname {
+                    width: 236px;
+                    height: 22px;
+                    margin: 10px auto 0;
+                    .TuName {
+                        display: block;
+                        color: black;
+                        font-size: 14px;
+                        text-align: left;
+                        float: left;
+                        line-height: 22px;
+                        padding-right: 10px;
+                    }
+                    .TuXian {
+                        display: block;
+                        width: 2px;
+                        height: 19px;
+                        margin: 1px;
+                        background: #ECE5E0;
+                        float: left;
+                    }
+                    .TuJia {
+                        display: block;
+                        font-size: 14px;
+                        color: @color;
+                        line-height: 22px;
+                        float: left;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+//热评区结束
+//内容区开始
+#NeiRongQu {
+    width: 100%px;
+    height: 478px;
+    background: #F5F5F5;
+    .NeiRongQuK {
+        width: 1226px;
+        height: 478px;
+        margin: 0 auto;
+        .NeiRongQuBT {
+            width: 1226px;
+            height: 58px;
+            line-height: 58px;
+        }
+        .NeiRongQuNR {
+            width: 1226px;
+            height: 420px;
+            .NRQNRk {
+                width: 1244px;
+                height: 420px;
+                .NRlunbo {
+                    width: 296px;
+                    height: 420px;
+                    background: #FFFFFF;
+                    position: relative;
+                    float: left;
+                    margin-right: 15px;
+                    overflow: hidden;
+                    &:hover {
+                        box-shadow: 0 14px 14px #DEDEDE;
+                        .NRYJT,
+                        .NRZJT {
+                            display: block;
+                        }
+                    }
+                    .NRZJT {
+                        display: block;
+                        width: 20px;
+                        height: 48px;
+                        background: rgba(0,0,0,0.2);
+                        position: absolute;
+                        left: 0;
+                        top: 185px;
+                        line-height: 48px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        display: none;
+                    }
+                    .NRYJT {
+                        display: block;
+                        width: 20px;
+                        height: 48px;
+                        position: absolute;
+                        right: 0;
+                        top: 185px;
+                        line-height: 48px;
+                        text-align: center;
+                        background: rgba(0,0,0,0.2);
+                        color: #FFFFFF;
+                        display: none;
+                    }
+                    .NRDianK {
+                        width: 296px;
+                        height: 30px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 10px;
+                        text-align: center;
+                        line-height: 30px;
+                        .NRdian {
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            text-align: center;
+                            border-radius: 50%;
+                            background: #B0B0B0;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .NRlunboBT {
+                        font-size: 16px;
+                        width: 296px;
+                        height: 24px;
+                        text-align: center;
+                        margin: 0 auto;
+                        padding-top: 40px;
+
+                    }
+                    .NRLBK {
+                        width: 296px;
+                        height: 340px;
+                        margin-top: 16px;
+                        .NRLBDK {
+                            width: 1226px;
+                            height: 340px;
+                            position: absolute;
+                            left: 0;
+                            top: 74px;
+                            .NRGengDuo {
+                                width: 296px;
+                                height: 340px;
+                                float: left;
+                                .GDJS {
+                                    display: block;
+                                    width: 200px;
+                                    height: 40px;
+                                    font-size: 12px;
+                                    color: @ziti;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    margin: 10px auto 0;
+                                }
+
+                                .GDIMG {
+                                    display: block;
+                                    width: 216px;
+                                    height: 154px;
+                                    margin: 20px auto 0;
+                                    text-align: center;
+
+                                }
+                            }
+                            .NRLBQ {
+                                width: 296px;
+                                height: 340px;
+                                float: left;
+                                .LBXK {
+                                    display: block;
+                                    width: 296px;
+                                    height: 340px;
+                                    .LBXKBT {
+                                        display: block;
+                                        width: 296px;
+                                        height: 25px;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        font-size: 20px;
+                                        color: black;
+                                        line-height: 25px;
+                                    }
+                                    .LBXKJS {
+                                        display: block;
+                                        width: 200px;
+                                        height: 40px;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        color: @ziti;
+                                        margin-top: 10px;
+                                    }
+                                    .LBXKJQ {
+                                        display: block;
+                                        width: 276px;
+                                        height: 21px;
+                                        margin: 0 auto;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        line-height: 21px;
+                                        color: black;
+                                        margin-top: 10px;
+                                    }
+                                    .LBXKIMG {
+                                        display: block;
+                                        width: 216px;
+                                        height: 154px;
+                                        margin: 10px auto 0;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//内容区结束
+//视频区开始
+#ShiPinQu {
+    width: 100%;
+    height: 343px;
+    padding: 40px 0;
+    background: #F5F5F5;
+    .ShiPinQuK {
+        width: 1226px;
+        height: 343px;
+        margin: 0 auto;
+        .ShiPinQuBTK {
+            width: 1226px;
+            height: 58px;
+            position: relative;
+            .ShiPinQuBT {
+                height: 58px;
+                line-height: 58px;
+            }
+            .ShiPinLianJieK {
+                width: 94px;
+                height: 58px;
+                line-height: 58px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                .ShiPinLianJie {
+                    color: #000000;
+                    &:hover {
+                        color: @color;
+                    }
+                    .SPJianTou {
+                        text-align: justify;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .ShiPinWaiK {
+            width: 1226px;
+            height: 285px;
+            .ShiPinNeiK {
+                width: 1240px;
+                height: 285px;
+                .ShiPin {
+                    width: 296px;
+                    height: 285px;
+                    background: #FFFFFF;
+                    float: left;
+                    margin-right: 11px;
+                    &:hover {
+                        box-shadow: 0 14px 14px #DEDEDE;
+                    }
+                    .ShiPinYuan {
+                        display: block;
+                        width: 296px;
+                        height: 180px;
+                        position: relative;
+                        &:hover {
+                            .ShiPinSanJiao {
+                                background: @color;
+                                border: 2px solid @color;
+                            }
+                        }
+                        .ShiPinSanJiao {
+                            display: block;
+                            width: 30px;
+                            height: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            border-radius: 15px;
+                            border: 2px solid #FFFFFF;
+                            color: #FFFFFF;
+                            position: absolute;
+                            left: 10px;
+                            bottom: 10px;
+                        }
+                    }
+                    .ShiPinName {
+                        display: block;
+                        width: 100%;
+                        height: 21px;
+                        line-height: 21px;
+                        text-align: center;
+                        font-size: 14px;
+                        padding-top: 30px;
+                        color: black;
+                        &:hover {
+                            color: @color;
+                        }
+                    }
+                    .ShiPinJieShao {
+                        display: block;
+                        width: 100%;
+                        height: 18px;
+                        line-height: 18px;
+                        text-align: center;
+                        font-size: 12px;
+                        padding-top: 5px;
+                        color: @ziti;
+                    }
+                }
+            }
+        }
+    }
+}
+//视频区结束
+//服务区开始
+#FuWuQu {
+    width: 100%;
+    height: 272px;
+    .FuWuK {
+        width: 1226px;
+        height: 272px;
+        margin: 0 auto;
+        .FuWuBiaoTi {
+            width: 1226px;
+            height: 80px;
+            border-bottom: 1px solid #E0E0E0;
+            .FWBTname {
+                margin-top: 28px;
+                width: 243px;
+                height: 25px;
+                float: left;
+                line-height: 25px;
+                text-align: center;
+                border-right: 1px solid #E0E0E0;
+                .iconfont {
+                    color: black;
+                    font-size: 20px;
+                    &:hover {
+                        color: @color;
+                    }
+                }
+            }
+        }
+        .FWXiangMu {
+            width: 1226px;
+            height: 192px;
+            .XiangMuJieShao {
+                width: 1236px;
+                height: 112px;
+                padding: 40px 0;
+                .XiangMu {
+                    width: 160px;
+                    height: 112px;
+                    float: left;
+                    margin-right: 3px;
+                    .XMbt {
+                        display: block;
+                        font-size: 14px;
+                        height: 17px;
+                        line-height: 17px;
+                        padding-bottom: 20px;
+                    }
+                    .JuTiFuWu {
+                        height: 14px;
+                        line-height: 14px;
+                        display: block;
+                        font-size: 12px;
+                        color: @ziti;
+                        padding: 10px 0 0;
+                        &:hover {
+                            color: @color;
+                        }
+                    }
+                }
+                .DianHua {
+                    width: 252px;
+                    height: 112px;
+                    margin-left: -3px;
+                    float: left;
+                    .HaoMa {
+                        display: block;
+                        height: 22px;
+                        line-height: 22px;
+                        color: @color;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .Time {
+                        display: block;
+                        height: 36px;
+                        width: 122px;
+                        line-height: 18px;
+                        margin: 3px auto 0;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    .rexian {
+                        display: block;
+                        width: 120px;
+                        height: 30px;
+                        line-height: 30px;
+                        margin: 20px auto 0;
+                        text-align: center;
+                        font-size: 12px;
+                        color: @color;
+                        border: 1px solid @color;
+                        &:hover {
+                            background: @color;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//服务区结束
+//底部域名
+#DiBu {
+    width: 100%;
+    height: 106px;
+    padding: 30px 0;
+    background: #F5F5F5;
+    .DiBuYuMingK {
+        width: 1226px;
+        height: 57px;
+        margin: 0 auto;
+        .DiBuNeiK {
+            width: 1226px;
+            height: 57px;
+            .DiBuLogo {
+                width: 57px;
+                height: 57px;
+                background: @color;
+                float: left;
+            }
+            .DiBuDaoHang {
+                width: 720px;
+                height: 55px;
+                float: left;
+                font-size: 12px;
+                margin-left: 10px;
+                .DiBuDaoHangK {
+                    width: 723px;
+                    height: 19px;
+                    .Biaoti {
+                        display: block;
+                        line-height: 19px;
+                        padding: 0 3px;
+                        margin-right: 2px;
+                        border-right: 1px solid @ziti;
+                        color: #757575;
+                        float: left;
+                        &:hover {
+                            color: @color;
+                        }
+                    }
+                }
+                .JuBaoDianHua {
+                    width: 720px;
+                    height: 36px;
+                    color: @ziti;
+                    line-height: 18px;
+                    a {
+                        color: @ziti;
+                        line-height: 18px;
+                        &:hover {
+                            color: @color;
+                        }
+                    }
+                }
+            }
+            .DiDuZuo {
+                width: 375px;
+                height: 28px;
+                float: right;
+                text-align: right;
+                a {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .DiBuZi {
+        width: 267px;
+        height: 19px;
+        margin: 0 auto;
+        color: @ziti;
+        font-size: 19px;
+        text-align: center;
+        line-height: 19px;
+        margin-top: 30px;
+    }
+}
+
+//底部域名结束
